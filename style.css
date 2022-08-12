@@ -233,9 +233,10 @@ hr{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:100px;
-    height:100px;
+    width:85px;
+    height:85px;
     margin-top: 21px;
+    opacity:60%;
 }
 .functions_image_name{
     font-size: 22px;
@@ -274,8 +275,7 @@ hr{
     text-align: center;
     font-size: 80px;
     font-family: 'Montserrat-Light';
-    margin:0;
-
+    margin-top:30px;
     color: #063478;
     animation: mainlogo_animazione 1s ease 0s 1 normal forwards;
 }
@@ -450,6 +450,8 @@ hr{
     color: #575d69;
     font-size: 18px;
     line-height: 1.4em;
+    margin-top: 20px;
+    margin-bottom:20px;
 }
 .titleschedule{
     text-align: left;
@@ -549,11 +551,19 @@ td{
 #secco{
     background-color: #eee8b5;
 }
-
-#meteo{
-    max-width: 80%;
-    margin-bottom: 50px;
+#bottone_spot{
+    background:    #15d798;
+    border-radius: 11px;
+    border:none;
     display: block;
     margin-left: auto;
+    margin-right: auto;
+    padding:       20px 45px;
+    color:         #ffffff;
+    font:          italic bold 26px/1 "Open Sans", sans-serif;
+    text-align:    center;
+}
+#iframe_documents{
+    margin-left: 50px;
     margin-right: auto;
 }

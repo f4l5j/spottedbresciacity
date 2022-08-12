@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    <title>OBSpace</title>
     <link rel="shortcut icon" href="icons/icon.ico"/>
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" href="icons/icona1.png">
     <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>OBSpace - Settings</title>
     <meta name="theme-color" content="#4287f5"/>
     <link rel="manifest" href="manifest.json">
     <script>
@@ -37,7 +37,6 @@ caches.keys()
       navigator.serviceWorker.register('sw.js');
     };
 </script>
-    
 </head>
 <body>
     
@@ -60,25 +59,16 @@ caches.keys()
         <a href="index.html"><img class="elemento_navmenu" src="icons/home.png"></a>
         <a href="faq.html"><img class="elemento_navmenu" src="icons/faq.png"></a>
         <a href="drinks.html"><img class="elemento_navmenu" src="icons/drinks.png"></a>
-        <a href="settings.html"><img class="elemento_corrente_navmenu" src="icons/settings.png"></a>
+        <a href="settings.html"><img class="elemento_navmenu" src="icons/settings.png"></a>
     </div>
     
     <!--fine navmenu-->
 
-    <div>
-        <div class="settings_header">
-            <h2>Impostazioni e contatti</h2>
-        </div>
-        <div class="option1">
-            <a href="https://www.instagram.com/spotted_bresciacity_/"><h3 class="option_scritta">Instagram</h3></a>
-        </div>
-        <div class="option">
-            <a href="https://www.tiktok.com/@about..jessica"><h3 class="option_scritta">Tik Tok</h3></a>
-        </div>
-        <div class="option">
-            <a href="privacypolicy.html"><h3 class="option_scritta">Cookie policy</h3></a>
-        </div>
-    </div>
+    <h1 class="maintitle">Gruppo</h1>
+    <p class="paragrafocentro">Vuoi entrare anche tu in un gruppo whatsapp con gente di brescia?</p>
+    <p class="paragrafocentro">Ecco il servizio giusto, ui puoi scrivere con persone di brescia e fare amicizie</p>
+    <a href="https://ask.fun/"><button id="bottone_spot">Gruppo</button></a>
+
 
     <!--fine interfaccia-->
 
@@ -91,7 +81,7 @@ caches.keys()
             <button class="cookie-btn">ACCETTA</button>
         </div>
     </div>
-    
+
     <!--script-->
     <script src="cookie.js"></script>
     <script src="contextmenu.js"></script>
