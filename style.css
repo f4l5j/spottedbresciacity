@@ -576,6 +576,18 @@ td{
     font:          italic bold 26px/1 "Open Sans", sans-serif;
     text-align:    center;
 }
+#bottone_wiki{
+    background:    #75b2ea8a;
+    border-radius: 11px;
+    padding:       20px 45px;
+    color:         #ffffff;
+    border:none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font:          italic bold 26px/1 "Open Sans", sans-serif;
+    text-align:    center;
+}
 #iframe_documents{
     margin-left: 50px;
     margin-right: auto;
@@ -588,4 +600,84 @@ td{
     padding-left:20px;
     padding-bottom:10px;
     font-family: 'Montserrat-Light';
+}
+
+/*school*/
+#container_school{
+    display: flex;
+    flex-flow: column;
+}
+.school{
+    margin:30px;
+    margin-bottom:15px;
+    padding:20px;
+    height: 80px;
+    border:none;
+    border-radius: 20px;
+    background-color: #9dc4ff7e;
+    clip-path: polygon(100% 0%,100% 100%,0% 100%,0% 0%);
+    transition: 0.8s;
+}
+.school:hover{
+    height:370px;
+    clip-path: polygon(100% 0%,100% 100%,0% 100%,0% 0%);
+}
+.image_school{
+    height: 80px;
+    width: 80px;
+}
+.info_school{
+    padding:7px;
+    display: flex;
+    flex-flow: column;
+    margin-left: 3px;
+}
+.immagine_info_school{
+    display:flex;
+    flex-flow: row;
+}
+.nome_school{
+    font-family: 'Montserrat-Medium';
+    font-size: 15px;
+}
+.indirizzo_school{
+    font-family: 'Montserrat-Medium';
+    font-size: 11px;
+}
+.moreinfo_school{
+    display: flex;
+    flex-flow: row;
+}
+.tipo_school{
+    margin-left:10px;
+}
+.indirizzi_school{
+    margin-left:10px;
+}
+.titolo_tipo_school{
+    font-family: 'Montserrat-Medium';
+    font-size: 13px;
+}
+.titolo_indirizzi_school{
+    font-family: 'Montserrat-Medium';
+    font-size: 13px;
+}
+.lista_settori{
+    font-family: 'Montserrat-Light';
+    font-size: 13px;
+    padding-left:20px;
+}
+.goto_school{
+    background:    #15d798;
+    border-radius: 30px;
+    padding:       10px 50px;
+    margin-bottom:10px;
+    color:         #ffffff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+    font-family: 'Montserrat-Light';
+    font-size: 13px;
+    text-align:    center;
 }
