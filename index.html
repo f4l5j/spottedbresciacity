@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-    <link rel="shortcut icon" href="icons/icon.ico"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" href="icons/icona1.png">
-    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Brescia</title>
-    <meta name="theme-color" content="#4287f5"/>
-    <link rel="manifest" href="manifest.json">
-    <script>
-            navigator.serviceWorker.getRegistration()
-    .then(function(registration) {
-        if(registration){
-            registration.unregister()
+  <link rel="shortcut icon" href="icons/icon.ico" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" href="icons/icona1.png">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Brescia</title>
+  <meta name="theme-color" content="#4287f5" />
+  <link rel="manifest" href="manifest.json">
+  <script>
+    navigator.serviceWorker.getRegistration()
+      .then(function (registration) {
+        if (registration) {
+          registration.unregister()
             .then(
-                function(success) {
-                    // if success = true, unregister was successful
-                    });
-            }
-        });
-    </script>
-    <script>
-        if ('caches' in window) {
-    caches.keys()
-      .then(function(keyList) {
-          return Promise.all(keyList.map(function(key) {
-              return caches.delete(key);
+              function (success) {
+                // if success = true, unregister was successful
+              });
+        }
+      });
+  </script>
+  <script>
+    if ('caches' in window) {
+      caches.keys()
+        .then(function (keyList) {
+          return Promise.all(keyList.map(function (key) {
+            return caches.delete(key);
           }));
-      })
-}
-    </script>
-    <script>
-        //if browser support service worker
-        if('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('sw.js');
-        };
-    </script>
+        })
+    }
+  </script>
+  <script>
+    //if browser support service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    };
+  </script>
 </head>
+
 <body>
 
-    <!--menu contestuale-->
-    <div class="menu">
-        <ul class="listmenu">
-          <li class="menuoptionfirst" onclick="goBack()">Indietro</li>
-          <li class="menuoption" onclick="goForward()">Avanti</li>
-          <li class="menuoption" onclick="reload()">Ricarica</li>
-          <li class="menuoption" onclick="deleteItems()">Cancella cookie</li>
-          <li class="menuoptionlast" onclick="toggleFullScreen()">Fullscreen</li>
-        </ul>
-    </div>
+  <!--menu contestuale-->
+  <div class="menu">
+    <ul class="listmenu">
+      <li class="menuoptionfirst" onclick="goBack()">Indietro</li>
+      <li class="menuoption" onclick="goForward()">Avanti</li>
+      <li class="menuoption" onclick="reload()">Ricarica</li>
+      <li class="menuoption" onclick="deleteItems()">Cancella cookie</li>
+      <li class="menuoptionlast" onclick="toggleFullScreen()">Fullscreen</li>
+    </ul>
+  </div>
 
-    <!--inizio interfaccia-->
+  <!--inizio interfaccia-->
 
-    <!--inizio navmenu-->
-    <!--
+  <!--inizio navmenu-->
+  <!--
     <div id="navmenu">
         <a href="index.html"><img class="elemento_corrente_navmenu" src="icons/home.png"></a>
         <a href="faq.html"><img class="elemento_navmenu" src="icons/faq.png"></a>
@@ -62,64 +65,67 @@
         <a href="settings.html"><img class="elemento_navmenu" src="icons/settings.png"></a>
     </div>
     -->
-    <!--fine navmenu-->
+  <!--fine navmenu-->
 
-    <img class="mainlogo1" src="images/logo.webp" alt="logo">
-    <h2 class="mainlogo2">BENVENUTI</h2>
+  <img class="mainlogo1" src="images/logo.webp" alt="logo">
+  <h2 class="mainlogo2">BENVENUTI</h2>
+  <br>
+  <a href="howto.html"><button id="howto">Come funziona</button></a>
 
-    <div id="functions_container">
-        <div class="functions_box" onclick="location.href='news.html'">
-            <img class="functions_image" src="icons/news.svg">
-            <h3 class="functions_image_name">News</h3>
-        </div>
-        <!--<div class="functions_box" onclick="location.href='spott.html'">
+  <div id="functions_container">
+    <div class="functions_box" onclick="location.href='news.html'">
+      <img class="functions_image" src="icons/news.svg">
+      <h3 class="functions_image_name">News</h3>
+    </div>
+    <!--<div class="functions_box" onclick="location.href='spott.html'">
             <img class="functions_image" src="icons/spott.svg">
             <h3 class="functions_image_name">Spott</h3>
         </div>-->
-        <div class="functions_box" onclick="location.href='faq.html'">
-            <img class="functions_image" src="icons/school.svg">
-            <h3 class="functions_image_name">Scuola</h3>
-        </div>
-        <!--<div class="functions_box" onclick="location.href='drinks.html'">
+    <div class="functions_box" onclick="location.href='faq.html'">
+      <img class="functions_image" src="icons/school.svg">
+      <h3 class="functions_image_name">Scuola</h3>
+    </div>
+    <!--<div class="functions_box" onclick="location.href='drinks.html'">
             <img class="functions_image" src="icons/drinks.svg">
             <h3 class="functions_image_name">Drinks</h3>
         </div>-->
-        <!--<div class="functions_box" onclick="location.href='gruppo.html'">
+    <!--<div class="functions_box" onclick="location.href='gruppo.html'">
             <img class="functions_image" src="icons/whatsapp.svg">
             <h3 class="functions_image_name">Whatsapp</h3>
         </div>-->
-        <div class="functions_box" onclick="location.href='settings.html'">
-            <img class="functions_image" src="icons/social.svg">
-            <h3 class="functions_image_name">Social</h3>
-        </div>
-        <div class="functions_box" onclick="location.href='bug.html'">
-            <img class="functions_image" src="icons/bug.svg">
-            <h3 class="functions_image_name">Bug</h3>
-        </div>
-        <div class="functions_box" onclick="location.href='patchnotes.html'">
-            <img class="functions_image" src="icons/patchnotes.svg">
-            <h3 class="functions_image_name">Patch Notes</h3>
-        </div>
-        <div class="functions_box" onclick="location.href='privacypolicy.html'">
-            <img class="functions_image" src="icons/privacypolicy.svg">
-            <h3 class="functions_image_name">Privacy Policy</h3>
-        </div>
+    <div class="functions_box" onclick="location.href='settings.html'">
+      <img class="functions_image" src="icons/social.svg">
+      <h3 class="functions_image_name">Social</h3>
     </div>
-
-
-    <!--fine interfaccia-->
-
-    <!--cookie alert-->
-    <div class="flexcookies">
-        <div class="cookie-container">
-            <h4 id="cookiescritta">
-                Questo sito usa <a id="linkcookies"href="privacypolicy.html">cookie</a> che servono a salvare la conferma della visione delle informative o di schede
-            </h4>
-            <button class="cookie-btn">ACCETTA</button>
-        </div>
+    <div class="functions_box" onclick="location.href='bug.html'">
+      <img class="functions_image" src="icons/bug.svg">
+      <h3 class="functions_image_name">Bug</h3>
     </div>
+    <div class="functions_box" onclick="location.href='patchnotes.html'">
+      <img class="functions_image" src="icons/patchnotes.svg">
+      <h3 class="functions_image_name">Patch Notes</h3>
+    </div>
+    <div class="functions_box" onclick="location.href='privacypolicy.html'">
+      <img class="functions_image" src="icons/privacypolicy.svg">
+      <h3 class="functions_image_name">Privacy Policy</h3>
+    </div>
+  </div>
 
-    <!--script-->
-    <script src="cookie.js"></script>
-    <script src="contextmenu.js"></script>
+
+  <!--fine interfaccia-->
+
+  <!--cookie alert-->
+  <div class="flexcookies">
+    <div class="cookie-container">
+      <h4 id="cookiescritta">
+        Questo sito usa <a id="linkcookies" href="privacypolicy.html">cookie</a> che servono a salvare la conferma della
+        visione delle informative o di schede
+      </h4>
+      <button class="cookie-btn">ACCETTA</button>
+    </div>
+  </div>
+
+  <!--script-->
+  <script src="cookie.js"></script>
+  <script src="contextmenu.js"></script>
 </body>
