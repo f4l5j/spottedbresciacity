@@ -27,8 +27,8 @@ const toggleMenu = command => {
 };
 
 const setPosition = ({ top, left }) => {
-  menu.style.left = `${left}px`;
-  menu.style.top = `${top}px`;
+  menu.style.left = `25%`;
+  menu.style.top = `30%`;
   toggleMenu("show");
 };
 

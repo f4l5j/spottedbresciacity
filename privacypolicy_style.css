@@ -132,3 +132,19 @@ li{
 #cookies_description{
     margin:0 8% 50px 8%;
 }
+.back{
+  background-color: #0040ff;
+  position: fixed;
+  border-radius:100px;
+  height: 60px;
+  width: 60px;
+  top:20px;
+  left:20px;
+  z-index: 2;
+}
+.back_image{
+  height:20px;
+  padding:20px;
+  filter: invert(1);
+  z-index: 1;
+}
