@@ -4,7 +4,6 @@ html{
     cursor: url('images/customcursor.cur'),auto;
 }
 body{
-    background-color: rgb(241, 241, 241);
     margin:0 0 50px 0;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none; /* iOS Safari */
@@ -13,9 +12,8 @@ body{
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
-    background: rgb(232,231,255);
     overflow-x: hidden;
-    background: radial-gradient(circle, rgba(232,231,255,1) 0%, rgba(220,249,255,1) 100%);
+    background: #f2f2f2;
 }
 a {
     color: #26ccff;
@@ -168,8 +166,8 @@ box-shadow: 0px 0px 0px 1000px rgba(0,0,0,0.75);
     bottom: 0;
     overflow-x: hidden;
     width: 100%;
-    padding-bottom:15px;
-    padding-top:15px;
+    padding-bottom:12px;
+    padding-top:12px;
     background-color: #fff;
     z-index: 1;
 }
@@ -193,7 +191,7 @@ box-shadow: 0px 0px 0px 1000px rgba(0,0,0,0.75);
     width: 350px;
     margin-bottom:-50px;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    filter: saturate(200%);
     opacity:70%;
     animation: mainlogo_animazione 1s ease 0s 1 normal forwards;
 }
@@ -241,7 +239,11 @@ box-shadow: 0px 0px 0px 1000px rgba(0,0,0,0.75);
     flex-wrap: wrap;
 }
 .functions_box{
-    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    border-radius: 50px;
+    background: #fafafa;
+    box-shadow:  20px 20px 50px #cecece,
+    -20px -20px 50px #ffffff;
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -256,10 +258,9 @@ box-shadow: 0px 0px 0px 1000px rgba(0,0,0,0.75);
 }
 .functions_image{
     position:relative;
-    width: 60px;
-    height:60px;
+    width: 80px;
+    height:80px;
   margin-left:30px;
-    opacity:40%;
 }
 .functions_image_name{
     font-size: 22px;
@@ -274,6 +275,12 @@ box-shadow: 0px 0px 0px 1000px rgba(0,0,0,0.75);
   margin-left:35px;
   margin-bottom: 20px;
   font-family: 'Montserrat-Light';
+}
+.image_function_page{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -316,13 +323,13 @@ box-shadow: 0px 0px 0px 1000px rgba(0,0,0,0.75);
 .option{
   margin:20px;
     padding:18px;
-  background-color: #66d4ff6f;
+  background-color: rgba(245, 245, 245, 0.435);
   border-radius:20px;
 }
 .option1{
   padding:18px;
   margin:20px;
-  background-color: #66d4ff6f;
+  background-color: rgba(245, 245, 245, 0.435);
   border-radius:20px;
 }
 .option_scritta{
