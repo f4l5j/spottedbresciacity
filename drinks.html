@@ -53,48 +53,19 @@ caches.keys()
 
     <!--inizio interfaccia-->
 
-    <!--bottone ritorno-->
-    <div class="back" onclick="goBack()">
-      <img class="back_image" src="icons/back.svg">
+    <!--inizio navmenu-->
+
+    <div id="navmenu">
+        <a href="index.html"><img class="elemento_navmenu" src="icons/home.png"></a>
+        <a href="faq.html"><img class="elemento_navmenu" src="icons/faq.png"></a>
+        <a href="drinks.html"><img class="elemento_corrente_navmenu" src="icons/drinks.png"></a>
+        <a href="settings.html"><img class="elemento_navmenu" src="icons/settings.png"></a>
     </div>
+    
+    <!--fine navmenu-->
 
-    <div class="spinner" id="box_spinner"></div>
-
-    <style>
-    .spinner {
-    position:absolute;
-    width: 56px;
-    height: 56px;
-    top: 40%;
-    left:43%;
-    border-radius: 50%;
-    background: radial-gradient(farthest-side,#474bff 94%,#0000) top/9px 9px no-repeat,
-            conic-gradient(#0000 30%,#474bff);
-    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
-    animation: spinner-c7wet2 0.8s infinite linear;
-    }
-
-    @keyframes spinner-c7wet2 {
-    100% {
-        transform: rotate(1turn);
-    }
-    }
-    </style>
-    <script>
-        setTimeout(() => {
-  const box = document.getElementById('box_spinner');
-
-  // 👇️ removes element from DOM
-  box.style.display = 'none';
-
-  // 👇️ hides element (still takes up space on page)
-  // box.style.visibility = 'hidden';
-}, 5000); // 👈️ time in milliseconds
-    </script>
-    <iframe id="iframe_documents" src="https://drive.google.com/embeddedfolderview?id=1Z8Qc1C-mn0kfF0pEE3IteyQW1Nmi1IFs#grid" style="width:110%; height:600px; border:0;"></iframe>
-    <br>
-    <a href="https://mega.nz/folder/kHMiDaDC#fq3AenUcWPp6f5Y2TK_sNA"><button id="bottone_spot">Accedi all'archivio</button></a>
-    <br><br>
+    <h1 class="maintitle">Pagina non ancora creata</h1>
+    <p class="paragrafocentro">Torna più tardi o aspetta l'annuncio su instagram</p>
 
     <!--fine interfaccia-->
 
